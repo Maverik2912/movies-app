@@ -1,0 +1,8 @@
+#demo-select-small-label{
+    font-weight: 700;
+}
+.custom-form-control.dark {
+    background-color: #c5c4c4;
+    color: #333;
+    border-radius: 5px;
+}

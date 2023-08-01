@@ -1,0 +1,45 @@
+.buttons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-block: 30px;
+}
+.buttons p{
+    font-weight: 700;
+    font-size: 20px;
+}
+.buttons button{
+    padding: 10px 15px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.buttons.dark button{
+    background-color: #c7c6c6;
+    border-radius: 20px;
+}
+.buttons.dark button:hover{
+    background-color: orange;
+}
+.buttons button:disabled:hover {
+    background-color: #c7c6c6;
+}
+.buttons.light button:disabled{
+    background-color: rgba(128, 128, 128, 0.54);
+    color: rgba(0, 0, 0, 0.51);
+}
+.buttons.light button:not(:disabled){
+    background-color: #484886;
+    color: white;
+}
+.buttons.light button:hover:not(:disabled){
+    background-color: #4e2e75;
+}
+.firstPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
