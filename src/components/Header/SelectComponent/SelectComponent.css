@@ -6,3 +6,18 @@
     color: #333;
     border-radius: 5px;
 }
+.custom-form-control.dark .MuiInputLabel-shrink{
+    color: white;
+    top: -8px;
+}
+
+.custom-form-control.light .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #5858ba;
+}
+.custom-form-control.dark .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color: transparent;
+}
+.custom-form-control.light .MuiInputLabel-shrink.Mui-focused {
+    color: #5858ba;
+}
+

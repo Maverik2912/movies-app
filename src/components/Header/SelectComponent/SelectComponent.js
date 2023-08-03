@@ -16,7 +16,7 @@ const SelectComponent = ({inputLabel, options}) => {
 
     useEffect(() => {
         moviesService.getGenres().then(({data}) => setGenresList(data.genres));
-    }, [])
+    }, []);
 
     useEffect(() => {
         if(selectedValue) {
@@ -31,7 +31,9 @@ const SelectComponent = ({inputLabel, options}) => {
                 navigate(`${links.TIME}/${selectedValue}`)
             }
         }
-    }, [selectedValue, genreName]);
+    }, [selectedValue, genreName, inputLabel, navigate, genresList]);
+
+   
 
     return (
         <FormControl
